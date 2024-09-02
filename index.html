@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Roadmap OM30</title>
+</head>
+<body>
+    <section>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Projeto Roadmap <span>OM30</span> <br>Grupo 1 - "À Procura da Felicidade" </h2>
+                <br>
+                <p id="paragrafo"></p>
+            </div>
+
+            <div class="imgBox">
+                <img src="images/img1.jpg" class="movie">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="images/thumb1.jpg" onclick="imgSlider('images/img1.jpg');mudarConteudo1()"></li>
+            <li><img src="images/thumb1.jpg" onclick="imgSlider('images/img2.jpg');mudarConteudo2()"></li>
+            <li><img src="images/thumb1.jpg" onclick="imgSlider('images/img3.jpg');mudarConteudo3()"></li>
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.movie').src = anything;
+        }
+
+
+        function mudarConteudo1() {
+            document.getElementById("paragrafo").innerHTML = "<p>A Procura da Felicidade é um filme baseado em fatos reais, lançado em 2006 e estrelado por Will Smith. A história segue Chris Gardner, um vendedor que enfrenta dificuldades financeiras e pessoais, enquanto luta para oferecer uma vida melhor para seu filho pequeno, Christopher Jr.</p> <p>Chris investe em um dispositivo médico inovador, mas suas finanças não vão bem, e ele acaba sendo despejado de sua casa. Sem alternativas, ele e seu filho se veem em situações difíceis, incluindo passar noites em abrigos e até mesmo em estações de metrô.</p> No entanto, Chris não desiste e, determinado a mudar sua sorte, ele consegue um estágio não remunerado em uma corretora de valores. <p>O estágio é extremamente competitivo e Chris enfrenta inúmeros desafios, mas sua dedicação e trabalho árduo acabam valendo a pena. O filme é uma poderosa história de resiliência, amor paternal e a busca por uma vida melhor, mostrando que, com perseverança e esforço, é possível superar adversidades e alcançar os próprios sonhos. </p>";
+        }
+
+        function mudarConteudo2() {
+            document.getElementById("paragrafo").innerHTML = "<p> <b>Resiliência e Perseverança</b>: Enfrentar adversidades e continuar avançando mesmo diante de dificuldades é fundamental.</p> <p> <b>Empatia e Suporte aos Membros da Equipe</b>: A forma como Gardner lida com sua situação difícil, enquanto cuida de seu filho, destaca a importância de entender e apoiar os outros, mesmo em tempos difíceis. A compreensão das dificuldades dos outros e a empatia podem fortalecer as relações e a equipe.</p> <p> <b>Foco nos Objetivos</b>: Ficar focado e determinado em relação aos seus objetivos, mesmo quando as condições são desafiadoras, é essencial para o sucesso.</p> <p><b>Gestão de Tempo e Prioridades</b>: Chris Gardner precisa gerir seu tempo de forma extremamente eficiente para equilibrar o trabalho, a busca por uma nova carreira e o cuidado com seu filho.</p> <p> <b>Liderar pelo Exemplo</b>: Chris Gardner demonstra que liderar pelo exemplo é uma forma poderosa de inspirar e motivar. Ele mostra integridade, trabalho árduo e resiliência, servindo como um modelo para seu filho e para aqueles ao seu redor. Líderes devem praticar o que pregam e ser modelos de comportamento, mostrando comprometimento, ética de trabalho e resiliência. Isso cria uma cultura de confiança e respeito dentro da equipe";
+        }
+
+        function mudarConteudo3() {
+            document.getElementById("paragrafo").innerHTML = "Desenvolvido por: <br> <p>Hugo Henrique</p> <p>Karen Albuquerque Borim</p> <p>Marina Verônica Bueno</p> <br> <p> - A perseverança é crucial para superar desafios, acreditar em si mesmo é fundamental para alcançar objetivos, e o amor e o apoio da família são vitais. A verdadeira felicidade muitas vezes estará na luta por nossos sonhos, mesmo quando as circunstâncias são difíceis. </p>";
+        }
+
+    </script>
+
+</body>
+</html>
